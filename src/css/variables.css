@@ -1,0 +1,42 @@
+:root {
+  --font-sans: 'Rubik', sans-serif;
+  --font-title: 'Playfair Display', serif;
+
+  --clr-bg-light: #f5f8fc;
+  --clr-bg-dark: #121418;
+  --clr-bg-blue: #e0f7fa;
+
+  --clr-text-light: #2a2a2a;
+  --clr-text-dark: #e0e0e0;
+  --clr-text-blue: #004d40;
+
+  --clr-primary: #0288d1;
+  --clr-primary-hover: #0277bd;
+  --clr-accent: #00bfa5;
+
+  --fs-small: .9rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 2.5rem;
+
+  --spacing: 1.5rem;
+  --radius: 12px;
+}
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--clr-bg-light);
+  color: var(--clr-text-light);
+  transition: background .3s, color .3s;
+}
+body.theme-dark {
+  background: var(--clr-bg-dark);
+  color: var(--clr-text-dark);
+}
+body.theme-blue {
+  background: var(--clr-bg-blue);
+  color: var(--clr-text-blue);
+}
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; padding: 0; margin: 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing); }
