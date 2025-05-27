@@ -4,28 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HydroSafe</title>
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/footer.css">
+  <link rel="stylesheet" href="./src/css/header.css">
+  <link rel="stylesheet" href="./src/css/auth.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.2/css/hover-min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="./src/css/variables.css"/>
-  <link rel="stylesheet" href="./src/css/main.css"/>
-  <link rel="icon" href="./src/assets/favicon.ico" type="image/png" />
+  <link rel="icon" href="./src/assets/favicon.ico" type="image/png">
 </head>
 <body class="theme-light">
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#hero" class="logo hvr-pulse">
+      <a href="#hero" class="logo hvr-pulse animate__animated animate__fadeInDown">
         <i class="fa-solid fa-water"></i> HydroSafe
       </a>
       <nav>
         <ul class="menu">
-          <li><a href="#hero">Início</a></li>
+          <li><a href="#hero" class="active">Início</a></li>
           <li><a href="#sec1">Problema</a></li>
           <li><a href="#sec2">Tecnologias</a></li>
           <li><a href="#sec3">Objetivos</a></li>
@@ -38,14 +41,26 @@
       </nav>
       <div class="nav-actions">
         <div class="themes">
-          <button data-theme="theme-light" class="theme-btn"><i class="fa-solid fa-sun"></i></button>
-          <button data-theme="theme-dark" class="theme-btn"><i class="fa-solid fa-moon"></i></button>
-          <button data-theme="theme-blue" class="theme-btn"><i class="fa-solid fa-droplet"></i></button>
+          <button data-theme="theme-light" class="theme-btn hvr-buzz"><i class="fa-solid fa-sun"></i></button>
+          <button data-theme="theme-dark" class="theme-btn hvr-buzz"><i class="fa-solid fa-moon"></i></button>
+          <button data-theme="theme-blue" class="theme-btn hvr-buzz"><i class="fa-solid fa-droplet"></i></button>
+        </div>
+        <div id="auth-section" class="auth-buttons">
+          <a href="./src/pages/login.html" class="btn btn-primary hvr-float">Login</a>
+          <a href="./src/pages/register.html" class="btn btn-primary hvr-float">Registrar</a>
+        </div>
+        <div id="user-menu" class="user-menu">
+          <img src="./src/assets/img/default-avatar.jpg" id="user-avatar" class="avatar">
+          <ul id="dropdown" class="dropdown-menu">
+            <li><a href="./src/pages/settings.html">Configurações</a></li>
+            <li><a href="#" id="logoutBtn">Sair</a></li>
+          </ul>
         </div>
         <button class="hamburger"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
+
   <main>
     <section id="hero" class="hero">
       <div class="hero-overlay"></div>
@@ -55,6 +70,7 @@
         <a href="#sec1" class="btn btn-primary hvr-buzz">Quero Saber Mais</a>
       </div>
     </section>
+
     <section id="sec1" class="panel" data-aos="fade-right">
       <div class="container grid-2">
         <div class="text">
@@ -67,6 +83,7 @@
         </div>
       </div>
     </section>
+
     <section id="sec2" class="panel" data-aos="fade-left">
       <div class="container grid-2">
         <div class="media">
@@ -79,6 +96,7 @@
         </div>
       </div>
     </section>
+
     <section id="sec3" class="panel" data-aos="fade-right">
       <div class="container grid-2">
         <div class="text">
@@ -91,6 +109,7 @@
         </div>
       </div>
     </section>
+
     <section id="sec4" class="panel" data-aos="fade-left">
       <div class="container grid-2">
         <div class="media">
@@ -103,6 +122,7 @@
         </div>
       </div>
     </section>
+
     <section id="sec5" class="panel" data-aos="fade-right">
       <div class="container grid-2">
         <div class="text">
@@ -115,6 +135,7 @@
         </div>
       </div>
     </section>
+
     <section id="sec6" class="panel" data-aos="fade-left">
       <div class="container grid-2">
         <div class="media">
@@ -127,6 +148,7 @@
         </div>
       </div>
     </section>
+
     <section id="info" class="info-grid">
       <div class="info-card" data-aos="flip-left">
         <i class="fa-solid fa-info-circle info-icon"></i>
@@ -164,6 +186,7 @@
         </ul>
       </div>
     </section>
+
     <section id="slideshow" class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="./src/assets/img/1.png" alt="Sensor"/></div>
@@ -175,36 +198,39 @@
       <div class="swiper-pagination"></div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-logo">
-        <img src="./src/assets/img/logo.png" alt="HydroSafe Logo"/>
-        <span>HydroSafe</span>
-      </div>
-      <ul class="footer-menu">
-        <li><a href="#hero">Início</a></li>
-        <li><a href="#info">Informações</a></li>
-        <li><a href="#slideshow">Galeria</a></li>
-      </ul>
-      <div class="footer-social">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <div class="footer-copy">
-        <p>© 2025 HydroSafe</p>
-        <p>Todos os direitos reservados.</p>
-      </div>
+
+<footer class="footer animate__animated animate__fadeInUp">
+  <div class="container footer-grid">
+    <div class="footer-logo hvr-bounce-in">
+      <img src="./src/assets/img/logo.png" alt="HydroSafe Logo"/>
+      <span>HydroSafe</span>
     </div>
-  </footer>
+    <ul class="footer-menu">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#info">Informações</a></li>
+      <li><a href="#slideshow">Galeria</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="#" class="hvr-grow"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="hvr-grow"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="hvr-grow"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 HydroSafe</p>
+      <p>Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="./src/js/script.js"></script>
+  <script type="module" src="./src/js/index.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 700, once: true });
     new Typed('#typed', {
-      strings: ['Monitoramento em tempo real', 'Alertas antecipados', 'Proteção à comunidade'],
+      strings: ['Monitoramento em tempo real','Alertas antecipados','Proteção à comunidade'],
       typeSpeed: 50, backSpeed: 25, loop: true
     });
   </script>
-  <script src="./src/js/script.js"></script>
 </body>
 </html>

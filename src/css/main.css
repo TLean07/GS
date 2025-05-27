@@ -211,7 +211,7 @@ body.theme-blue .info-grid {
   height: 40px;
 }
 .footer-menu {
-  display: flex; gap: var(--spacing);
+  display: flex; gap: var(--spacing); align-items: center; display: f;
 }
 .footer-menu a {
   color: #fff; transition: color .3s;
