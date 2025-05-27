@@ -1,9 +1,7 @@
-// Hamburger Toggle
 const ham = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 ham.addEventListener('click', () => menu.classList.toggle('open'));
 
-// Scroll-spy Active Link
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.menu a');
 window.addEventListener('scroll', () => {

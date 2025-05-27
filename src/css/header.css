@@ -1,0 +1,120 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.2/css/hover-min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.nav-inner {
+  margin: 0 auto 0 0;
+  padding: 0 var(--spacing);
+  height: 80px;
+}
+
+.logo {
+  margin-right: 3rem;
+}
+
+.menu {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-inner nav {
+  margin-right: 2rem;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1.5rem;
+}
+
+.theme-btn {
+  background: var(--clr-bg-light);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: transform .2s, background .3s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-menu {
+  display: none;
+  position: relative;
+  flex-shrink: 0; /* não deixa o menu encolher */
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--clr-primary);
+  cursor: pointer;
+  transition: transform .2s;
+  flex-shrink: 0;   /* impede encolhimento */
+  max-width: none;  /* sobrescreve img {max-width:100%} */
+  display: inline-block;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(6px);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  list-style: none;
+  overflow: hidden;
+  animation: animate__fadeInDown .4s both;
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: .75rem 1.5rem;
+  color: var(--clr-text-light);
+  font-weight: 500;
+  transition: background .2s;
+}
+
+.dropdown-menu li a:hover {
+  background: var(--clr-bg-light);
+}
+
+.hamburger span {
+  width: 28px;
+  height: 4px;
+}
+
+@media(max-width:768px) {
+  .menu li a {
+    padding: 1rem 0;
+  }
+}

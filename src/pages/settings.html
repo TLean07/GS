@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Configurações | HydroSafe</title>
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.2/css/hover-min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/auth.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="icon" href="../assets/favicon.ico" type="image/png">
+  <style>
+    #passwordForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    }
+
+    #passwordForm input[type="password"] {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--clr-primary);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: var(--font-base);
+    transition: border-color .3s, box-shadow .3s;
+    }
+
+    #passwordForm input[type="password"]:focus {
+    outline: none;
+    border-color: var(--clr-accent);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    }
+
+    #passwordForm button {
+    padding: 0.75rem 1rem;
+    background: var(--clr-primary);
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(--font-base);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background .3s, transform .2s;
+    }
+
+    #passwordForm button:hover {
+    background: var(--clr-accent);
+    transform: translateY(-2px);
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .settings-page {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding: 4rem 1rem;
+      background: var(--clr-bg-light);
+    }
+    .settings-box {
+      background: #fff;
+      padding: 3rem;
+      border-radius: var(--radius);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 480px;
+      width: 100%;
+      display: grid;
+      gap: 2rem;
+      animation: animate__fadeInUp .8s both;
+    }
+    .settings-box h2 {
+      font-family: var(--font-title);
+      color: var(--clr-primary);
+      text-align: center;
+      animation: animate__fadeInDown .8s both;
+    }
+    .profile-container {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 1rem;
+    }
+    .profile-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--clr-accent);
+      animation: animate__zoomIn .6s both;
+      cursor: pointer;
+    }
+    .profile-container i {
+      position: absolute;
+      bottom: 0; right: 0;
+      background: var(--clr-accent);
+      color: #fff;
+      padding: 0.4rem;
+      border-radius: 50%;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform .2s;
+    }
+    .profile-container i:hover {
+      transform: scale(1.1);
+    }
+    .back-settings {
+      text-align: center;
+    }
+    .back-settings a {
+      color: var(--clr-text-light);
+      font-size: var(--fs-small);
+      text-decoration: none;
+      transition: color .3s;
+    }
+    .back-settings a:hover {
+      color: var(--clr-primary);
+    }
+    footer.footer {
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body class="theme-light">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><i class="fa-solid fa-water"></i> HydroSafe</a>
+    </div>
+  </header>
+
+  <section class="settings-page" data-aos="fade-up">
+    <div class="settings-box">
+      <h2>Configurações da Conta</h2>
+
+      <div class="profile-container">
+        <img
+          id="profilePreview"
+          src="../assets/img/default-avatar.jpg"
+          alt="Avatar"
+          title="Clique para alterar a foto"
+        />
+        <i id="changePhotoIcon" class="fa-solid fa-camera"></i>
+      </div>
+
+      <input id="photoInput" type="file" accept="image/*" style="display:none;" />
+
+      <form id="passwordForm">
+        <input type="password" name="newPassword" placeholder="Nova senha" required />
+        <button type="submit" class="hvr-buzz">Atualizar Senha</button>
+      </form>
+
+      <div class="back-settings">
+        <a href="../../index.html"><i class="fa-solid fa-arrow-left"></i> Voltar ao Início</a>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer animate__animated animate__fadeInUp">
+  <div class="container footer-grid">
+    <div class="footer-logo hvr-bounce-in">
+      <img src="../assets/img/logo.png" alt="HydroSafe Logo"/>
+      <span>HydroSafe</span>
+    </div>
+    <ul class="footer-menu">
+      <li><a href="../../index.html#hero">Início</a></li>
+      <li><a href="../../index.html#info">Informações</a></li>
+      <li><a href="../../index.html#slideshow">Galeria</a></li>
+    </ul>
+    <div class="footer-social">
+      <a href="#" class="hvr-grow"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="hvr-grow"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="hvr-grow"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 HydroSafe</p>
+      <p>Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init({ duration:700, once:true });</script>
+  <script type="module" src="../js/firebase.js"></script>
+  <script type="module" src="../js/settings.js"></script>
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

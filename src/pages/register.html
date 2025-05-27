@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registrar | HydroSafe</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="icon" href="../assets/favicon.ico" type="image/png">
+</head>
+<body class="theme-light">
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="../../index.html" class="logo"><i class="fa-solid fa-water"></i> HydroSafe</a>
+  </header>
+
+  <div class="auth-page" data-aos="fade-up">
+    <div class="auth-box">
+      <h2>Criar Conta no HydroSafe</h2>
+      <form id="authForm">
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="password" name="password" placeholder="Senha" required>
+        <button type="submit" class="hvr-buzz">Cadastrar</button>
+      </form>
+      <div class="auth-links">
+        <a href="../../index.html" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+        <a href="login.html" class="switch-btn">Já tem conta?</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer animate__animated animate__fadeInUp">
+    <div class="container footer-grid">
+      <div class="footer-logo hvr-bounce-in">
+        <img src="../assets/img/logo.png" alt="HydroSafe Logo"/><span>HydroSafe</span>
+      </div>
+      <ul class="footer-menu">
+        <li><a href="../../index.html">Início</a></li>
+        <li><a href="../../index.html#info">Informações</a></li>
+        <li><a href="../../index.html#slideshow">Galeria</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="#" class="hvr-grow"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hvr-grow"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hvr-grow"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2025 HydroSafe</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init({duration:700,once:true}); </script>
+  <script type="module" src="../js/auth.js"></script>
+</body>
+</html>
