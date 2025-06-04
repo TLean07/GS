@@ -1,4 +1,3 @@
-// js/settings.js
 import { auth, db, storage } from "./firebase.js";
 import {
   onAuthStateChanged,
