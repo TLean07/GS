@@ -19,6 +19,8 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link rel="icon" href="./src/assets/favicon.ico" type="image/png">
+  <link rel="stylesheet" href="./src/css/video.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body class="theme-light">
   <header class="nav">
@@ -71,12 +73,17 @@
       </div>
     </section>
 
+    <!-- Seção "Os problemas que resolvemos" -->
     <section id="sec1" class="panel" data-aos="fade-right">
       <div class="container grid-2">
         <div class="text">
-          <h3>O problema que resolvemos</h3>
-          <p>Enchentes crescentes trazem perdas materiais e risco à vida.</p>
-          <p>Ausência de monitoramento em tempo real e resposta rápida.</p>
+          <h3>Os problemas que resolvemos</h3>
+          <ul>
+            <li>Falta de monitoramento em tempo real de níveis de água em áreas urbanas.</li>
+            <li>Atraso na comunicação de alertas para a população em risco.</li>
+            <li>Comunidades vulneráveis sem acesso a informações confiáveis sobre enchentes.</li>
+            <li>Ausência de dados consolidados para que autoridades tomem decisões preventivas.</li>
+          </ul>
         </div>
         <div class="media">
           <img src="./src/assets/img/hero.png" alt="Cidade alagada"/>
@@ -84,6 +91,7 @@
       </div>
     </section>
 
+    <!-- Seção "Tecnologias utilizadas" -->
     <section id="sec2" class="panel" data-aos="fade-left">
       <div class="container grid-2">
         <div class="media">
@@ -91,18 +99,25 @@
         </div>
         <div class="text">
           <h3>Tecnologias utilizadas</h3>
-          <p>IoT para coleta de dados em campo.</p>
-          <p>Machine Learning para predição de inundações.</p>
+          <ul>
+            <li>Sensores IoT para coleta contínua de dados hidrológicos.</li>
+            <li>Machine Learning para predição de riscos de enchentes.</li>
+            <li>Plataforma Web Responsive (HTML5, CSS3, JavaScript ES6).</li>
+            <li>Firebase Authentication, Firestore e Storage para backend em tempo real.</li>
+            <li>APIs de SMS e WhatsApp para envio de alertas imediatos.</li>
+            <li>Dashboard interativo com bibliotecas AOS, Swiper e Typed.js.</li>
+            <li>Infraestrutura em nuvem para armazenamento e processamento de dados.</li>
+          </ul>
         </div>
       </div>
     </section>
 
+    <!-- Seção "Objetivos do projeto" -->
     <section id="sec3" class="panel" data-aos="fade-right">
       <div class="container grid-2">
         <div class="text">
           <h3>Objetivos do projeto</h3>
-          <p>Reduzir 50% do tempo de alerta público.</p>
-          <p>Unificar dados em dashboard único.</p>
+          <p>Desenvolver e implementar um sistema inteligente de monitoramento e alerta em tempo real para enchentes urbanas, que combine tecnologia, conscientização da população e soluções sustentáveis, visando reduzir os impactos causados pelas enchentes, proteger vidas e bens materiais, além de promover a preparação e o apoio às comunidades vulneráveis.</p>
         </div>
         <div class="media">
           <img src="./src/assets/img/Objetivos do projeto.png" alt="Gráfico de metas"/>
@@ -110,6 +125,7 @@
       </div>
     </section>
 
+    <!-- Seção "Público-alvo" -->
     <section id="sec4" class="panel" data-aos="fade-left">
       <div class="container grid-2">
         <div class="media">
@@ -117,18 +133,25 @@
         </div>
         <div class="text">
           <h3>Público-alvo</h3>
-          <p>Prefeituras, Defesa Civil e cidadãos de áreas de risco.</p>
-          <p>Inclusão digital para pessoas com baixa alfabetização.</p>
+          <ul>
+            <li>População residente em áreas urbanas vulneráveis a enchentes, especialmente em regiões com histórico de alagamentos e falta de infraestrutura adequada.</li>
+            <li>Autoridades municipais e órgãos públicos de defesa civil.</li>
+            <li>Organizações governamentais e ONGs.</li>
+            <li>Comunidades com acesso limitado à internet.</li>
+            <li>Prefeituras e órgãos responsáveis pela gestão urbana e infraestrutura.</li>
+          </ul>
         </div>
       </div>
     </section>
 
+    <!-- Seção "Benefícios oferecidos" -->
     <section id="sec5" class="panel" data-aos="fade-right">
       <div class="container grid-2">
         <div class="text">
           <h3>Benefícios oferecidos</h3>
-          <p>Alertas via app, SMS e alto-falantes.</p>
-          <p>Dashboard interativo e relatórios personalizáveis.</p>
+          <p>A HydroSafe oferece monitoramento em tempo real por meio de sensores inteligentes, possibilitando a previsão e o alerta antecipado sobre riscos de enchentes. Os avisos são enviados por WhatsApp, SMS, site e alto-falantes, garantindo que toda a população, inclusive as áreas com pouco acesso à internet, receba as informações a tempo.</p>
+          <p>A plataforma também conta com um módulo educativo que ensina como se preparar e agir em situações de enchente, ajudando a reduzir perdas materiais e riscos à vida. Além disso, propõe soluções sustentáveis, como pavimentos permeáveis, para diminuir o acúmulo de água nas ruas.</p>
+          <p>Por fim, estabelece parcerias com ONGs para oferecer apoio às vítimas e fornece dados precisos para que as autoridades possam agir rapidamente na gestão das emergências.</p>
         </div>
         <div class="media">
           <img src="./src/assets/img/Benefícios oferecidos.png" alt="Dashboard"/>
@@ -136,6 +159,7 @@
       </div>
     </section>
 
+    <!-- Seção "Como ajuda no dia a dia" -->
     <section id="sec6" class="panel" data-aos="fade-left">
       <div class="container grid-2">
         <div class="media">
@@ -143,8 +167,25 @@
         </div>
         <div class="text">
           <h3>Como ajuda no dia a dia</h3>
-          <p>Avisa cidadãos antes de chuvas fortes.</p>
-          <p>Permite ação preventiva da Defesa Civil.</p>
+          <p>A HydroSafe ajuda no dia a dia das pessoas e das cidades ao fornecer informações em tempo real sobre riscos de enchentes, permitindo que moradores se preparem com antecedência e evitem danos a bens e riscos pessoais. Com alertas acessíveis por vários canais, garante que todos, mesmo em áreas com pouco acesso à internet, recebam avisos importantes para agir rápido.</p>
+          <p>Além disso, educa a população sobre prevenção e segurança, tornando as comunidades mais preparadas e conscientes. Para as autoridades, oferece dados precisos para respostas ágeis, melhorando a gestão das emergências e a proteção das áreas vulneráveis.</p>
+          <p>Dessa forma, contribui para cidades mais seguras, organizadas e resilientes ao impacto das chuvas intensas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="panel" data-aos="fade-up">
+      <div class="container">
+        <h3>Confira o vídeo explicativo</h3>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--radius); box-shadow: 0 6px 18px rgba(0,0,0,0.1);">
+          <iframe
+            src="https://www.youtube.com/embed/QaFCVM97N0w"
+            title="Vídeo explicativo HydroSafe"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -153,7 +194,7 @@
       <div class="info-card" data-aos="flip-left">
         <i class="fa-solid fa-info-circle info-icon"></i>
         <h4>Descrição da Solução</h4>
-        <p>Plataforma integrada de monitoramento e resposta a enchentes.</p>
+        <p>Plataforma integrada de monitoramento e resposta a enchentes urbanas.</p>
       </div>
       <div class="info-card" data-aos="flip-left" data-aos-delay="100">
         <i class="fa-solid fa-heart-pulse info-icon"></i>
@@ -199,28 +240,28 @@
     </section>
   </main>
 
-<footer class="footer animate__animated animate__fadeInUp">
-  <div class="container footer-grid">
-    <div class="footer-logo hvr-bounce-in">
-      <img src="./src/assets/img/logo.png" alt="HydroSafe Logo"/>
-      <span>HydroSafe</span>
+  <footer class="footer animate__animated animate__fadeInUp">
+    <div class="container footer-grid">
+      <div class="footer-logo hvr-bounce-in">
+        <img src="./src/assets/img/logo.png" alt="HydroSafe Logo"/>
+        <span>HydroSafe</span>
+      </div>
+      <ul class="footer-menu">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#info">Informações</a></li>
+        <li><a href="#slideshow">Galeria</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="#" class="hvr-grow"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hvr-grow"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hvr-grow"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2025 HydroSafe</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
     </div>
-    <ul class="footer-menu">
-      <li><a href="#hero">Início</a></li>
-      <li><a href="#info">Informações</a></li>
-      <li><a href="#slideshow">Galeria</a></li>
-    </ul>
-    <div class="footer-social">
-      <a href="#" class="hvr-grow"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#" class="hvr-grow"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#" class="hvr-grow"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    <div class="footer-copy">
-      <p>© 2025 HydroSafe</p>
-      <p>Todos os direitos reservados.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="./src/js/script.js"></script>
   <script type="module" src="./src/js/index.js"></script>
