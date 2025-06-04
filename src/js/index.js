@@ -1,5 +1,3 @@
-// src/js/index.js
-
 import { auth } from "./firebase.js";
 import { onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
 
@@ -14,8 +12,6 @@ onAuthStateChanged(auth, user => {
   if (user) {
     authSection.style.display = "none";
     userMenu.style.display    = "flex";
-
-    // se tiver photoURL (do Storage), usa. Senão, fallback para o default.
     userAvatar.src = user.photoURL || DEFAULT_AVATAR;
   } else {
     authSection.style.display = "flex";
