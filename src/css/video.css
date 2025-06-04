@@ -1,0 +1,114 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://unpkg.com/aos@next/dist/aos.css');
+
+:root {
+  --video-border-width: 6px;
+  --video-border-color: var(--clr-accent);
+  --video-border-hover-color: var(--clr-primary);
+  --video-shadow-color: rgba(0, 0, 0, 0.15);
+  --video-bg-light: #ffffff;
+  --video-bg-dark: #1e1e1e;
+  --video-bg-blue: #e0f7fa;
+}
+
+#video {
+  padding: 4rem 0;
+  background: var(--clr-bg-light);
+  transition: background .3s;
+  overflow: hidden;
+}
+body.theme-dark #video {
+  background: var(--video-bg-dark);
+}
+body.theme-blue #video {
+  background: var(--video-bg-blue);
+}
+
+#video .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+
+#video .container > div {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: calc(var(--radius) * 1.5);
+  border: var(--video-border-width) solid var(--video-border-color);
+  box-shadow: 0 8px 24px var(--video-shadow-color);
+  background: #000; 
+  animation: fadeInUp 1s ease both;
+  transition: border-color .3s, box-shadow .3s, transform .3s;
+}
+
+#video .container > div:hover {
+  border-color: var(--video-border-hover-color);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+#video iframe {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  border-radius: calc(var(--radius) * 1.2);
+}
+
+#video .container > div::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: calc(var(--radius) * 1.5);
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+}
+
+#video .container > div::after {
+  content: '';
+  position: absolute;
+  top: -var(--video-border-width);
+  left: -var(--video-border-width);
+  width: calc(100% + var(--video-border-width) * 2);
+  height: calc(100% + var(--video-border-width) * 2);
+  border-radius: calc(var(--radius) * 1.75);
+  background: transparent;
+  box-shadow: 0 0 0 var(--video-border-width) rgba(0, 191, 165, 0.3);
+  transition: box-shadow .3s;
+  pointer-events: none;
+}
+
+#video .container > div:hover::after {
+  box-shadow: 0 0 0 var(--video-border-width) rgba(2, 136, 209, 0.4);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#video h3 {
+  font-family: var(--font-title);
+  font-size: var(--fs-xl);
+  color: var(--clr-primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease both;
+  transition: color .3s;
+}
+body.theme-dark #video h3 {
+  color: var(--clr-accent);
+}
+body.theme-blue #video h3 {
+  color: var(--clr-text-blue);
+}
