@@ -6,11 +6,11 @@ Bem-vindo ao repositório **GS**! 🎉 Aqui reunimos seus três mini-projetos de
 
 ## 👥 Equipe
 
-| Nome                               | GitHub                                                |
-| ---------------------------------- | ----------------------------------------------------- |
-| Leandro Afonso Silva Santos Júnior | [TLean07](https://github.com/TLean07)                 |
-| Luigi Escudero Grigoletto          | [Lueg2007](https://github.com/Lueg2007)               |
-| Guilherme Barone Milani            | [GuilhermeBM3012](https://github.com/GuilhermeBM3012) |
+| Nome                               | GitHub                                                | RM(s)                                                 |
+| ---------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
+| Leandro Afonso Silva Santos Júnior | [TLean07](https://github.com/TLean07)                 | 561344                                                |
+| Luigi Escudero Grigoletto          | [Lueg2007](https://github.com/Lueg2007)               | 562505                                                |
+| Guilherme Barone Milani            | [GuilhermeBM3012](https://github.com/GuilhermeBM3012) | 562114                                                |
 
 ---
 
