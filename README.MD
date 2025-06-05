@@ -17,6 +17,7 @@ Bem-vindo ao repositório **GS**! 🎉 Aqui reunimos seus três mini-projetos de
 ## 🔗 Links Úteis
 
 * 🌐 **Repositório GitHub:** [https://github.com/TLean07/GS.git](https://github.com/TLean07/GS.git)
+* 🔗 **Vercel:** [https://gs-two-ruddy.vercel.app/](https://gs-two-ruddy.vercel.app/)
 * 📄 **Demo Pages:** abra `index.html` no Live Server do VS Code
 
 ---
